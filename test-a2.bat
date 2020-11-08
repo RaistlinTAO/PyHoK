@@ -1,0 +1,1 @@
+python kog_a2.py
