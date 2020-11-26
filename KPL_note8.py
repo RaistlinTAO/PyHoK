@@ -38,6 +38,8 @@ def do_money_work():
     sleep(1)
     tap_screen(540, 1530)
     sleep(1)
+    tap_screen(540, 1590)
+    sleep(1)
 
 if __name__ == '__main__':
     for i in range(repeat_times):
