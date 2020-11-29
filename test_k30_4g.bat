@@ -1,0 +1,1 @@
+python kog_k30_4g.py
