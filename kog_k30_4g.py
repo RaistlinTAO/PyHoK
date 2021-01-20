@@ -30,7 +30,7 @@ def tap_screen(x, y):
 
 def do_money_work():
     #logging.debug('***Start***')
-    tap_screen(1563, 903)
+    tap_screen(1809, 903)
     sleep(1)
     tap_screen(2380, 1060)
     sleep(1)
