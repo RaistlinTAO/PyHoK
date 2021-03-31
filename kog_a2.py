@@ -33,11 +33,11 @@ def tap_screen(x, y):
 
 def do_money_work():
     tap_screen(1450, 910)
-    sleep(1)
+    sleep(0.2)
     tap_screen(1720, 80)
-    sleep(1)
+    sleep(0.2)
     tap_screen(1600, 980)
-    sleep(1)
+    sleep(0.2)
 
 if __name__ == '__main__':
     for i in range(repeat_times):

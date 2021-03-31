@@ -29,11 +29,11 @@ def tap_screen(x, y):
 def do_money_work():
     #logging.debug('***Start***')
     tap_screen(1650, 877)
-    sleep(1)
+    sleep(0.2)
     tap_screen(2099, 1077)
-    sleep(1)
+    sleep(0.2)
     tap_screen(1960, 1000)
-    sleep(1)
+    sleep(0.2)
 
 
 if __name__ == '__main__':
