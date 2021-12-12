@@ -6,7 +6,7 @@ import os
 from time import sleep
 
 # 屏幕分辨率
-device_x, device_y = 1520, 720
+device_x, device_y = 2400, 1080
 #2400 1080
 
 # 通关模式：1=重新挑战 -> 挑战界面，2=重新挑战-> 更换阵容
