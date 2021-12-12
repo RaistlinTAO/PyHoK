@@ -24,19 +24,13 @@ logging.basicConfig(format='%(asctime)s %(message)s',
 
 
 def tap_screen(x, y):
-    """calculate real x, y according to device resolution."""
-    base_x, base_y = 1920, 1080
-    real_x = int(x / base_x * device_x)
-    real_y = int(y / base_y * device_y)
-    os.system('adb -s 9f55e00d shell input tap {} {}'.format(real_x, real_y))
+    os.system('adb -s 9f55e00d shell input tap {} {}'.format(x, y))
 
 
 def do_money_work():
     tap_screen(1450, 910)
     sleep(0.2)
-    tap_screen(1720, 80)
-    sleep(0.2)
-    tap_screen(1600, 980)
+    tap_screen(1980, 910)
     sleep(0.2)
 
 if __name__ == '__main__':
