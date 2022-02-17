@@ -30,16 +30,19 @@ def tap_screen(x, y):
 
 def do_money_work():
     #logging.debug('***Start***')
-    tap_screen(992, 1800)
+    #红包入口
+    tap_screen(992, 2100)
     sleep(1)
+    #开红包
     tap_screen(540, 1400)
-    sleep(1)
+    sleep(0.5)
     tap_screen(550, 1530)
-    sleep(1)
-    tap_screen(775, 860)
+    sleep(0.5)
+    #关闭红包页面
+    tap_screen(775, 880)
     sleep(1)
     tap_screen(540, 1630)
-    sleep(1)
+    sleep(0.5)
 
 if __name__ == '__main__':
     for i in range(repeat_times):
