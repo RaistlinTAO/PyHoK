@@ -25,23 +25,25 @@ logging.basicConfig(format='%(asctime)s %(message)s',
 
 
 def tap_screen(x, y):
-    os.system('adb -s 665aea57 shell input tap {} {}'.format(x, y))
+    os.system('adb -s 8e610fd shell input tap {} {}'.format(x, y))
 
 
 def do_money_work():
     #logging.debug('***Start***')
     #红包入口
-    tap_screen(992, 1945)
-    #tap_screen(992, 2100)
+    #tap_screen(998, 1945)
+    tap_screen(998, 2087)
     sleep(1)
     #开红包
-    tap_screen(540, 1400)
+    tap_screen(540, 1386)
     sleep(0.5)
+    #???
     tap_screen(550, 1530)
     sleep(0.5)
     #关闭红包页面
-    tap_screen(775, 880)
+    tap_screen(780, 880)
     sleep(1)
+    #????
     tap_screen(540, 1630)
     sleep(0.5)
 

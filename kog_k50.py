@@ -6,7 +6,7 @@ import os
 from time import sleep
 
 # 屏幕分辨率
-device_x, device_y = 1520, 720
+device_x, device_y = 2400, 1080
 #2400 1080
 
 # 通关模式：1=重新挑战 -> 挑战界面，2=重新挑战-> 更换阵容
@@ -25,25 +25,18 @@ logging.basicConfig(format='%(asctime)s %(message)s',
 
 
 def tap_screen(x, y):
-    os.system('adb -s 665aea57 shell input tap {} {}'.format(x, y))
+    os.system('adb -s 8e610fd shell input tap {} {}'.format(x, y))
 
 
 def do_money_work():
     #logging.debug('***Start***')
-    #红包入口
-    tap_screen(992, 1945)
-    #tap_screen(992, 2100)
-    sleep(1)
-    #开红包
-    tap_screen(540, 1400)
+    tap_screen(1809, 903)
+    sleep(0.2)
+    tap_screen(2380, 1060)
+    sleep(0.3)
+    tap_screen(1873, 1023)
     sleep(0.5)
-    tap_screen(550, 1530)
-    sleep(0.5)
-    #关闭红包页面
-    tap_screen(775, 880)
-    sleep(1)
-    tap_screen(540, 1630)
-    sleep(0.5)
+
 
 if __name__ == '__main__':
     for i in range(repeat_times):

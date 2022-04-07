@@ -31,6 +31,7 @@ def tap_screen(x, y):
 def do_money_work():
     #logging.debug('***Start***')
     #红包入口
+    #tap_screen(998, 1945)
     tap_screen(998, 2087)
     sleep(1)
     #开红包
